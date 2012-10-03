@@ -3,6 +3,8 @@
 part
 --add CodeIgniter 2.1.2
 --add phpMyAdmin-3.5.2.2-all-languages
+--add bootstrap-2.1.1
+--add jquery-1.8.2
 file
 --add Boxfile
 --add .htaccess
