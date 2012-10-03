@@ -1,0 +1,16 @@
+db1: 
+  name: databaseci
+  type: mysql
+web1: 
+  name: ciplusphpmyadmin
+  php_extensions: 
+    - mysql
+    - mysqli
+    - mcrypt
+    - mbstring
+  shared_writable_dirs: 
+    - application/cache
+    - application/logs
+  after_build:
+    # Move pagoda config file to app/config
+    - "mv pagoda/database.php application/config/database.php"
